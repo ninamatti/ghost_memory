@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <script type="text/javascript" src="modules/lodash.full.min.js"></script>
+  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
+  <script type="text/javascript" src="script.js" async></script>
+  <link rel='stylesheet' href='styles.css'></script>;
+  <title>GOT Memory Game</title>
+</head>
+
+<body>
+  <h1 class='page-title'>Ghost of Tsushima</h1>
+  <h2 class='game-title'>Memory Game</h2>
+  
+  <div class='overlay-text start visible'>
+    <span class='border'>Start New Game!</span>
+  </div>
+  <div id='game-over-text' class='overlay-text visible'>
+    GAME OVER
+    <span class='overlay-text-small'>Click to restart</span>
+  </div>
+  <div id='victory-text' class='overlay-text visible'>
+    YOU WON!
+    <span class='overlay-text-small'>Click to restart</span>
+  </div>
+
+  <div class='game-container'>
+    
+    <div class='game-info-container'>
+      <div class='game-info'>
+        Time <span id='time-remaining'>100</span>
+      </div>
+      <div class='game-info'>
+        Flips <span id='flips'>0</span>
+      </div>
+    </div>
+
+    <div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/darkTreeAtmospheric_resized.png'>
+      </div>
+    </div>
+    <div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/duelAtTadayorisrest.png'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/darkTreeAtmospheric_resized.png'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/duelAtTadayorisrest.png'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/duelRedFlowers_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/duelRedFlowers_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/ghostoftsushimaSwordCemetery_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/ghostoftsushimaSwordCemetery_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/goldenTemple1_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/goldenTemple1_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/horseTopOfHill_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/horseTopOfHill_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/snowyTemple_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/snowyTemple_resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/title-resized.jpg'>
+      </div>
+    </div><div class='card'>
+      <div class='card-back card-face'>
+        <img class='back-logo' src='Assets/images/logo-1_resized.png'>
+      </div>
+      <div class='card-front card-face'>
+        <img class='card-value'  src='Assets/images/title-resized.jpg'>
+      </div>
+    </div>
+    
+  </div>
+  <h4 class='copyright'>Pictures and sound are the property of Sucker Punch Production.</h4>
+</body>
+
+</html>
